@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiPi Technologies - Assignment Upload</title>
+</head>
+<body>
+
+    <h2>Saiful Islam contact - information</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to me at <em>saifulislamofficialid5@gmail.com</em></p>
+
+    <form>
+        <fieldset>
+        <legend><strong>Assignment Upload Form</strong></legend>
+        <label for="studentName">Student Name:</label><br>
+
+        <input type="text"
+               id="studentName"
+               name="studentName"
+               placeholder="Your name please">
+        <br><br>
+        <label for="course">Course Name:</label><br>
+        <input type="text"
+               id="course"
+               name="course"
+               placeholder="e.g., Java, HTML, Data Structures">
+        <br><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel"
+                pattern="\+91 [0-9]{10}"
+               id="mobile"
+               name="mobile"
+               required
+               placeholder="e.g., +91 882-209-4329">
+        <br><br>
+        <!-- File Upload Section 
+            <label for="Gender">Gender:</label><br>
+            <select id="Gender" name="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        -->
+            <label for="Gender">Gender:</label><br>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label>
+
+        <br><br>
+        <label for="course">Selected Course:</label><br>
+        <select id="course" name="course">
+            <option value="">-- Select Course --</option>
+            <option value="webDevelopment">Web Development</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="dataStructures">Data Structures</option>
+            <optgroup label="Other Courses">
+                <option value="cProgramming">C Programming</option>
+                <option value="cppProgramming">C++ Programming</option>
+            </optgroup>
+        </select><br><br>
+
+
+        <label for="timing">Preferred Timing:</label><br>
+        <select id="timing" name="timing">
+            <option value="">-- Select Timing --</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+
+        <br><br>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please provide any additional information or questions you may have."></textarea>
+        <label for="myFile">Upload Assignment File:</label><br>
+        <input type="file"
+               id="myFile"
+               name="assignmentFile">
+
+        <br><br>
+        <input type="submit" value="Submit Assignment">
+        <input type="reset" value="Clear Form">
+        </fieldset>
+    </form>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiPi Technologies - Course Registration Form</title>
+</head>
+<body>
+
+    <h2>ChiPi Technologies - Course Registration Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label for="course">Course Name:</label><br>
+            <select id="course" name="course">
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="React with Projects">React with Projects</option>
+                <option value="Python for Beginners">Python for Beginners</option>
+            </select><br><br>
+
+            <label for="batch">Preferred Batch Timing:</label><br>
+            <input type="text" id="batch" name="batch"
+                   placeholder="e.g., Weekend Morning"><br><br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <p>&copy; 2026 SAIFUL ISLAM. All rights reserved.</p>
+
+</body>
+</html>
